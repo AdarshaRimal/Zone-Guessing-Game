@@ -29,7 +29,6 @@ You can install the required libraries using pip:
 
 ```bash
 pip install pandas
-
 ## Files in the Project
 
 - **nepal_zone.gif**: The image file of Nepal that will be used as the map in the game.
@@ -73,4 +72,5 @@ This project is open-source and available for personal or educational use. Feel 
 ---
 
 Enjoy playing the Nepal Zone Guessing Game and enhance your knowledge of Nepal's geography!
+
 
