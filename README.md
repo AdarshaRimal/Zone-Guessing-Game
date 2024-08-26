@@ -29,3 +29,48 @@ You can install the required libraries using pip:
 
 ```bash
 pip install pandas
+
+## Files in the Project
+
+- **nepal_zone.gif**: The image file of Nepal that will be used as the map in the game.
+- **zone.csv**: A CSV file containing the names of the zones along with their respective x and y coordinates on the map.
+- **zones_to_learn.csv**: This file is generated when you exit the game and contains the names of zones that you didn't guess correctly.
+
+## Example of `zone.csv` File Structure
+
+The `zone.csv` file should have the following structure:
+
+| zone  |  x  |  y  |
+|-------|-----|-----|
+| Zone1 |  50 |  60 |
+| Zone2 | 120 | 300 |
+| ...   | ... | ... |
+
+## Code Breakdown
+
+- **Setup the Screen**: The turtle screen is set up with the map of Nepal as the background.
+- **Watermark**: A watermark is added to the bottom of the screen using turtle graphics.
+- **Game Loop**: The game enters a loop where it prompts the user to guess a zone until all zones are correctly identified or the user chooses to exit.
+- **Zone Marking**: When a correct zone is guessed, a turtle object is used to mark the zone's name on the map at its corresponding coordinates.
+- **Exit and Save**: If the player exits, a CSV file with the missed zones is created to help them learn the zones they didn't guess.
+
+## How to Customize
+
+- **Change the Map**: Replace `nepal_zone.gif` with another map image to create a similar guessing game for a different region.
+- **Update Zones**: Modify the `zone.csv` file to include different zones or regions, along with their respective coordinates.
+- **Adjust Watermark**: The watermark text and position can be customized in the code to reflect a different name or location.
+
+## Future Enhancements
+
+- **Add Timer**: Introduce a timer to challenge players to guess all the zones within a limited time.
+- **Hints**: Provide hints for difficult zones after a few incorrect guesses.
+- **Scoreboard**: Implement a high-score system to track the best performances.
+
+## License
+
+This project is open-source and available for personal or educational use. Feel free to modify and share it as you like.
+
+---
+
+Enjoy playing the Nepal Zone Guessing Game and enhance your knowledge of Nepal's geography!
+
